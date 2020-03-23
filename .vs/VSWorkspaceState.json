@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\contact",
+    "\\src\\app\\footer",
+    "\\src\\app\\login",
+    "\\src\\app\\models",
+    "\\src\\app\\navbar",
+    "\\src\\app\\reg-form",
+    "\\src\\app\\register"
+  ],
+  "SelectedNode": "\\package.json",
+  "PreviewInSolutionExplorer": false
+}
