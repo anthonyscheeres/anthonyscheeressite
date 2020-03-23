@@ -1,5 +1,3 @@
-<app-huis></app-huis>
-
 
 <div *ngFor="let value of contactInfoDataFromServer">
   <article class="articlemiddle">
@@ -8,7 +6,7 @@
     <div *ngIf="showInputFields ==false">
 
 
-      <h4> {{value.house_nickname}} </h4>
+      <h4> {{value.name}} </h4>
 
       <p>Plaats: {{value.place}}</p>
 
@@ -19,7 +17,7 @@
 
       <br>
 
-      <h4>Family {{value.family_name}}</h4>
+     
 
 
       <p>Mail: {{value.mail}}</p>
@@ -35,7 +33,7 @@
       
 
 
-        <input class="form-group" type="text" placeholder={{value.house_nickname}} id="houseNickname">
+        <input class="form-group" type="text" placeholder={{value.name}} id="houseNickname">
 
         <input class="form-group" type="text" placeholder={{value.place}} id="place">
 
@@ -46,7 +44,7 @@
 
         <br>
 
-        <input class="form-group" type="text" placeholder={{value.family_name}} id="familyName">
+  
 
 
         <input class="form-group" type="text" placeholder={{value.mail}} id="mail">
