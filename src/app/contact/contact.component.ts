@@ -41,7 +41,12 @@ export class ContactComponent implements OnInit {
 
 
   doStuff() {
-    this.showInputFields = this.checkIfSuperUser() ;
+    try {
+      this.showInputFields = this.checkIfSuperUser();
+    }
+    catch (Error) {
+      //console.log();
+    }
   }
 
   checkIfSuperUser() {
@@ -59,16 +64,15 @@ export class ContactComponent implements OnInit {
     var target = event.target
 
 
-    var house = target.querySelector('#houseNickname').value
+    var house = target.querySelector('#name').value
     var place = target.querySelector('#place').value
     var address = target.querySelector('#address').value
     var postalCode = target.querySelector('#postalCode').value
-    var familyName = target.querySelector('#familyName').value
     var mail = target.querySelector('#mail').value
     var telephone = target.querySelector('#telephone').value
     var url = this.ConstructPostContactInfoUrl();
-    var data = JSON.stringify({ "house_nickname": house, "place": place, "address": address, "postal_code": postalCode, "family_name": familyName, "telephone": telephone, "mail": mail })
-    console.log("hi")
+    var data = JSON.stringify({ "name": house, "place": place, "address": address, "postal_code": postalCode,  "telephone": telephone, "mail": mail })
+
 
     fetchJsonPost(url, data.toString(), ProtocolR.PUT);
   }
@@ -78,7 +82,7 @@ export class ContactComponent implements OnInit {
     var host = ServerModel.host;
     var port = ServerModel.port;
     var token = JSON.parse(DataModel.account)[0].token.toString();
-    var url = "https://" + host + ":" + port + "/api/ContactInfo/ChangeContactInfo?token="+token;
+    var url = "http://" + host + ":" + port + "/api/ContactInfo/ChangeContactInfo?token="+token;
     return url;
   }
 
@@ -87,7 +91,7 @@ export class ContactComponent implements OnInit {
   ConstructGetContactInfoUrl() {
     var host = ServerModel.host;
     var port = ServerModel.port;
-    var url = "https://" + host + ":" + port + "/api/ContactInfo/getContactInfo";
+    var url = "http://" + host + ":" + port + "/api/ContactInfo/getContactInfo";
     return url;
   }
 

@@ -36,30 +36,23 @@ export class LoginFormComponent implements OnInit {
     const password = target.querySelector('#password').value
    
 
-
-    await login(username, password).then(response => {
-      console.log(response);
-
-      if (response == '"fail"') {
-        this.this1 = "Oops denk dat je de verkeerde gegvens heb ingevuld! Heb je, je email al gevalideert?!"
-
-      }
-
-      else  {
+    try {
+      await login(username, password).then(response => {
         DataModel.account;
         var jsonObject = JSON.parse(response);
         localStorage.setItem("token", jsonObject)
 
-  
-
         DataModel.account = jsonObject;
-    
-        this._router.navigate(['/']);
-      }
-      
-    })
-    ;
 
+        this._router.navigate(['/']);
+
+
+      })
+        ;
+    }
+    catch (Error) {
+      this.this1 = "Oops denk dat je de verkeerde gegvens heb ingevuld! Heb je, je email al gevalideert?!"
+    }
 
 
 

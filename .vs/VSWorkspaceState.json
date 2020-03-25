@@ -5,12 +5,10 @@
     "\\src\\app",
     "\\src\\app\\contact",
     "\\src\\app\\footer",
-    "\\src\\app\\login",
+    "\\src\\app\\login-form",
     "\\src\\app\\models",
-    "\\src\\app\\navbar",
-    "\\src\\app\\reg-form",
-    "\\src\\app\\register"
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\app\\login-form\\login-form.component.ts",
   "PreviewInSolutionExplorer": false
 }
