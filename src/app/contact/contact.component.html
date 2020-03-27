@@ -27,13 +27,13 @@
 
     </div>
 
-
-    <form *ngIf="showInputFields" class="login100-form validate-form" (submit)="submitNewContactDetails($event)">
+    <div *ngIf="showInputFields">
+    <form class="login100-form validate-form" (submit)="submitNewContactDetails($event)">
 
       
 
 
-        <input class="form-group" type="text" placeholder={{value.name}} id="houseNickname">
+        <input class="form-group" type="text" placeholder={{value.name}} id="name">
 
         <input class="form-group" type="text" placeholder={{value.place}} id="place">
 
@@ -56,6 +56,6 @@
       <input class="btn btn-lg btn-outline-primary" id="button" type='submit' value="Update Contact Page">
 
     </form>
-
+      </div>
   </article>
 </div>

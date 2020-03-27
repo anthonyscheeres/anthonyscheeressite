@@ -59,10 +59,10 @@ export class ContactComponent implements OnInit {
   }
 
   async submitNewContactDetails(event) {
+  
     event.preventDefault()
-
-    var target = event.target
-
+    const target = event.target
+  
 
     var house = target.querySelector('#name').value
     var place = target.querySelector('#place').value
@@ -72,9 +72,9 @@ export class ContactComponent implements OnInit {
     var telephone = target.querySelector('#telephone').value
     var url = this.ConstructPostContactInfoUrl();
     var data = JSON.stringify({ "name": house, "place": place, "address": address, "postal_code": postalCode,  "telephone": telephone, "mail": mail })
+  
 
-
-    fetchJsonPost(url, data.toString(), ProtocolR.PUT);
+   await fetchJsonPost(url, data.toString(), ProtocolR.PUT);
   }
 
 

@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { RegFormComponent } from './reg-form/reg-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -33,12 +34,14 @@ import { RouterModule } from '@angular/router';
     RegFormComponent
   ],
   imports: [
+
     BrowserModule,
     HttpClientModule,
 
     RouterModule.forRoot(
-      [
 
+
+      [
 
 
         {
@@ -71,7 +74,9 @@ import { RouterModule } from '@angular/router';
       ]
     ),
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy, useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
