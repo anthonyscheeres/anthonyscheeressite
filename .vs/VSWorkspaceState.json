@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\login-form",
+    "\\src\\app\\navbar",
     "\\src\\app\\reg-form"
   ],
-  "SelectedNode": "\\src\\app\\login-form\\login-form.component.html",
+  "SelectedNode": "\\src\\app\\navbar\\navbar.component.html",
   "PreviewInSolutionExplorer": false
 }

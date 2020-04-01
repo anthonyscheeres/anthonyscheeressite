@@ -12,6 +12,7 @@ import { RegFormComponent } from './reg-form/reg-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -27,7 +28,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
     HomeComponent,
     FooterComponent,
-
+    ProfileComponent
     LoginFormComponent,
     LoginComponent,
     RegisterComponent,
@@ -53,7 +54,10 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
           path: '',
           component: HomeComponent
         },
-
+        {
+          path: 'profile',
+          component: ProfileComponent
+        },
    
         {
           path: 'contact',

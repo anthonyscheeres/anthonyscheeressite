@@ -8,19 +8,19 @@
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark" role="navigation">
     
 
-      <nav class="navbar">
-        <a routerLink="/home">Home</a>
-      
-        <a class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
-        <a class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
+    <nav class="navbar">
+      <a routerLink="/home">Home</a>
+      <a *ngIf="isLoggedIn" routerLink="/profile">Profile</a>
+      <a class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
+      <a class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
 
 
-        <a style="float:right" routerLink="/contact">Contact</a>
-        <a *ngIf = "isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
+      <a style="float:right" routerLink="/contact">Contact</a>
+      <a *ngIf="isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
 
 
 
-      </nav>
+    </nav>
 
   </nav>
 </div>
