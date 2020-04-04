@@ -10,8 +10,8 @@
 
     <nav class="navbar">
       <a routerLink="/home">Home</a>
-      <a *ngIf="isLoggedIn" routerLink="/profile">Profile</a>
-      <a class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
+      <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
+      <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
       <a class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
 
 

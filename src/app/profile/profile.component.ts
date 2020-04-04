@@ -3,6 +3,8 @@ import { ServerModel } from '../models/ServerModel';
 import { HttpClient } from '@angular/common/http';
 import { DataModel } from '../models/DataModel';
 import { UserModel } from '../models/UserModel';
+import { fetchJsonPost } from '../services/http';
+import { ProtocolR } from '../models/Protocol';
 
 @Component({
   selector: 'app-profile',
