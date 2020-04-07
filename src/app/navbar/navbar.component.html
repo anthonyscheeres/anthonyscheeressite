@@ -12,7 +12,7 @@
       <a routerLink="/home">Home</a>
       <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
       <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
-      <a class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
+      <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
 
 
       <a style="float:right" routerLink="/contact">Contact</a>
