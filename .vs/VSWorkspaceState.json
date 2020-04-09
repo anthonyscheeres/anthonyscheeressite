@@ -3,11 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\contact",
-    "\\src\\app\\home",
-    "\\src\\app\\login-form",
-    "\\src\\app\\navbar"
+    "\\src\\app\\profile"
   ],
-  "SelectedNode": "\\src\\styles.css",
+  "SelectedNode": "\\src\\app\\profile\\profile.component.html",
   "PreviewInSolutionExplorer": false
 }
