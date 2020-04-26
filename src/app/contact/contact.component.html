@@ -1,61 +1,63 @@
 
-<div *ngFor="let value of contactInfoDataFromServer">
-  <article class="articlemiddle">
-    <h3>Contact Opnemen</h3>
+  <div class="fff">
+    <div *ngFor="let value of contactInfoDataFromServer">
+      <article class="articlemiddle">
+        <h3>Contact Opnemen</h3>
 
-    <div *ngIf="showInputFields ==false">
-
-
-      <h4> {{value.name}} </h4>
-
-      <p>Plaats: {{value.place}}</p>
-
-      <p>Address:  {{value.address}}</p>
+        <div *ngIf="showInputFields ==false">
 
 
-      <p>Postcode:  {{value.postal_code}}</p>
+          <h4> {{value.name}} </h4>
 
-      <br>
+          <p>Plaats: {{value.place}}</p>
 
-     
-
-
-      <p>Mail: {{value.mail}}</p>
+          <p>Address:  {{value.address}}</p>
 
 
-      <p> Telefoon: {{value.telephone}}</p>
+          <p>Postcode:  {{value.postal_code}}</p>
 
+          <br>
+
+
+
+
+          <p>Mail: {{value.mail}}</p>
+
+
+          <p> Telefoon: {{value.telephone}}</p>
+
+        </div>
+
+        <div *ngIf="showInputFields">
+          <form class="login100-form validate-form" (submit)="submitNewContactDetails($event)">
+
+
+
+
+            <input class="form-group" type="text" value={{value.name}} id="name">
+
+            <input class="form-group" type="text" value={{value.place}} id="place">
+
+            <input class="form-group" type="text" value={{value.address}} id="address">
+
+
+            <input class="form-group" type="text" value={{value.postal_code}} id="postalCode">
+
+            <br>
+
+
+
+
+            <input class="form-group" type="text" value={{value.mail}} id="mail">
+
+
+            <input class="form-group" type="text" value={{value.telephone}} id="telephone">
+
+
+            <input class="btn btn-lg btn-outline-primary" id="button" type='submit' value="Update Contact Page">
+
+          </form>
+        </div>
+      </article>
     </div>
-
-    <div *ngIf="showInputFields">
-    <form class="login100-form validate-form" (submit)="submitNewContactDetails($event)">
-
-      
-
-
-        <input class="form-group" type="text" value={{value.name}} id="name">
-
-        <input class="form-group" type="text" value={{value.place}} id="place">
-
-        <input class="form-group" type="text" value={{value.address}} id="address">
-
-
-        <input class="form-group" type="text" value={{value.postal_code}} id="postalCode">
-
-        <br>
-
-  
-
-
-        <input class="form-group" type="text" value={{value.mail}} id="mail">
-
-
-        <input class="form-group" type="text" value={{value.telephone}} id="telephone">
-   
-
-      <input class="btn btn-lg btn-outline-primary" id="button" type='submit' value="Update Contact Page">
-
-    </form>
-      </div>
-  </article>
-</div>
+    </div>

@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
+import { HeaderComponent } from './header/header.component';
+import { ServicesInformationComponent } from './services-information/services-information.component';
 
 
 
@@ -32,7 +34,10 @@ import { ProfileComponent } from './profile/profile.component';
     LoginFormComponent,
     LoginComponent,
     RegisterComponent,
-    RegFormComponent
+    RegFormComponent,
+    HeaderComponent,
+    ServicesInformationComponent,
+    
   ],
   imports: [
 
