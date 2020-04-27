@@ -3,14 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\footer",
-    "\\src\\app\\header",
-    "\\src\\app\\login",
-    "\\src\\app\\register",
-    "\\src\\app\\services",
-    "\\src\\app\\services-information",
-    "\\src\\assets"
+    "\\src\\app\\home",
+    "\\src\\app\\profile"
   ],
-  "SelectedNode": "\\src\\app\\header\\header.component.html",
+  "SelectedNode": "\\src\\app\\home\\home.component.html",
   "PreviewInSolutionExplorer": false
 }
