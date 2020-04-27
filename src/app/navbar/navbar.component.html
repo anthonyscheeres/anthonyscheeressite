@@ -11,21 +11,22 @@
     <nav class="navbar">
       <a routerLink="/home">Home</a>
 
-      
-        <div class="d-none d-md-block">
-          <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
-          <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
-          <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
-          <a href="../assets/CV.pdf">CV</a>
-        </div>
+      <a routerLink="/portfolio">Portfolio</a>
+
+      <div class="d-none d-md-block">
+        <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
+        <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
+        <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-user" routerLink="/register"> Register</a>
+        <a href="../assets/CV.pdf">CV</a>
+      </div>
 
 
-        <a style="float:right" routerLink="/contact">Contact</a>
+      <a style="float:right" routerLink="/contact">Contact</a>
+      <div class="d-none d-md-block">
         <a *ngIf="isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
 
-
-
-</nav>
+        </div>
+    </nav>
 
   </nav>
 </div>

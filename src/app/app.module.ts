@@ -15,6 +15,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { ServicesInformationComponent } from './services-information/services-information.component';
+import { PortefolioComponent } from './portefolio/portefolio.component';
 
 
 
@@ -37,6 +38,7 @@ import { ServicesInformationComponent } from './services-information/services-in
     RegFormComponent,
     HeaderComponent,
     ServicesInformationComponent,
+    PortefolioComponent,
     
   ],
   imports: [
@@ -49,6 +51,10 @@ import { ServicesInformationComponent } from './services-information/services-in
 
       [
 
+        {
+          path: 'portfolio',
+          component: PortefolioComponent
+        },
 
         {
           path: 'register',
