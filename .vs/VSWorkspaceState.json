@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\header",
-    "\\src\\app\\home",
-    "\\src\\app\\navbar",
-    "\\src\\app\\portefolio",
-    "\\src\\assets",
-    "\\src\\assets\\img",
-    "\\src\\assets\\img\\portfolio"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\portefolio\\portefolio.component.ts",
+  "SelectedNode": "\\src\\app\\home",
   "PreviewInSolutionExplorer": false
 }
