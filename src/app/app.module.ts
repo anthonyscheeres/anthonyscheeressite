@@ -11,7 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { RegFormComponent } from './reg-form/reg-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { ServicesInformationComponent } from './services-information/services-information.component';
@@ -63,7 +63,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
       
         {
           path: '',
-          component: HomeComponent
+          redirectTo: '/home', pathMatch: 'full'
         },
         {
           path: 'profile',
@@ -89,9 +89,9 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
       ]
     ),
   ],
-  providers: [{
-    provide: LocationStrategy, useClass: HashLocationStrategy
-  }],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
