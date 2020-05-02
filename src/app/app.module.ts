@@ -21,6 +21,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
 
 
 
+
 @NgModule({
   declarations: [
 
@@ -39,6 +40,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
     HeaderComponent,
     ServicesInformationComponent,
     PortefolioComponent,
+   
     
   ],
   imports: [

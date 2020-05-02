@@ -1,4 +1,16 @@
 
+
+  <div *ngIf="contactInfoDataFromServer.length == 0">
+    <br>
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+
+  </div>
+
   <div class="fff">
     <div *ngFor="let value of contactInfoDataFromServer">
       <article class="articlemiddle">

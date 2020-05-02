@@ -13,7 +13,7 @@ import { ProtocolR } from '../models/Protocol';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  contactInfoDataFromServer: any;
+  contactInfoDataFromServer: ContactInfoModel[] = []
   showInputFields: boolean = false;
     mySubscription: any;
 

@@ -3,7 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\navbar"
+    "\\src\\app\\navbar",
+    "\\src\\app\\portefolio"
   ],
   "SelectedNode": "\\src\\app\\navbar\\navbar.component.html",
   "PreviewInSolutionExplorer": false
