@@ -2,3 +2,35 @@ img{
     height: 30ex;
 
 }
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+ .featured-text {
+    padding: 2rem;
+  }
+
+@media (min-width: 992px) {
+ .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+ .project-text {
+  padding: 1rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+ .project-text {
+    padding: 2rem;
+  }
+
+ .project-text hr {
+      border-color: #64a19d;
+      border-width: .25rem;
+      width: 30%;
+    }
+}

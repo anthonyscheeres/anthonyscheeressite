@@ -6,8 +6,11 @@
     "\\src\\app\\header",
     "\\src\\app\\home",
     "\\src\\app\\navbar",
-    "\\src\\app\\portefolio"
+    "\\src\\app\\portefolio",
+    "\\src\\assets",
+    "\\src\\assets\\img",
+    "\\src\\assets\\img\\portfolio"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\portefolio\\portefolio.component.html",
   "PreviewInSolutionExplorer": false
 }

@@ -9,14 +9,14 @@
     
 
     <nav class="navbar">
-      <a routerLink="/home">Home</a>
+      <a routerLink="/home"><span class="glyphicon glyphicon-home"></span> Home</a> 
 
       <a routerLink="/portfolio">Portfolio</a>
 
       <div class="d-none d-md-block">
         <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
         <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
-        <a href="../assets/CV.pdf"  target="_blank">CV</a>
+        <a href="../assets/CV.pdf" target="_blank">CV</a>
       </div>
 
 
@@ -24,7 +24,7 @@
       <div class="d-none d-md-block">
         <a *ngIf="isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
 
-        </div>
+      </div>
     </nav>
 
   </nav>
