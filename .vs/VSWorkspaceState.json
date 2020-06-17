@@ -3,14 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
-    "\\src\\app\\home",
-    "\\src\\app\\navbar",
     "\\src\\app\\portefolio",
     "\\src\\assets",
     "\\src\\assets\\img",
     "\\src\\assets\\img\\portfolio"
   ],
-  "SelectedNode": "\\src\\app\\home\\home.component.html",
+  "SelectedNode": "\\src\\app\\portefolio\\portefolio.component.html",
   "PreviewInSolutionExplorer": false
 }
