@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "algemeneanthonyscheeressite"
+    }
+  },
+  "defaultProject": "algemeneanthonyscheeressite",
+  "cli": {
+    "analytics": false
+  }
 }
