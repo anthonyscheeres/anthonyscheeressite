@@ -2,8 +2,8 @@
 export class AccountModel {
 
 
-  token: String = localStorage.getItem("token");
-  hasSuperPermission: boolean = false;
+  token: String = localStorage.getItem('token');
+  hasSuperPermission = false;
 
   constructor() { }
 

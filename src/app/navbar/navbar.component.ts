@@ -10,44 +10,43 @@ import { interval } from 'rxjs';
 })
 export class NavbarComponent implements OnInit {
   mySubscription: any;
-  isLoggedIn: boolean = false;
+  isLoggedIn = false;
 
   constructor(private _router: Router) {
     this.update();
 
-    
+
   }
 
   update() {
     {
-            var time = 500
-      this.mySubscription = interval(time).subscribe((x => {
+            const time = 500;
+            this.mySubscription = interval(time).subscribe((x => {
         this.doStuff();
       })
-     
+
       );
     }}
 
 
   doStuff() {
-    var isLoggedIn = false;
+    let isLoggedIn = false;
     isLoggedIn = this.checkIfUserIsLoggedIn();
     this.isLoggedIn = isLoggedIn;
 
   }
 
   checkIfUserIsLoggedIn() {
-    var loggedIn = false;
+    let loggedIn = false;
 
     try {
-      var obj = JSON.parse(DataModel.account)[0];
+      const obj = JSON.parse(DataModel.account)[0];
 
 
-      loggedIn = obj.token != null
+      loggedIn = obj.token != null;
     //  console.log(loggedIn);
 
-    }
-    catch{
+    } catch {
 
     }
 
@@ -58,10 +57,10 @@ export class NavbarComponent implements OnInit {
   }
 
   logOut() {
-    this.logOut2()
+    this.logOut2();
     this._router.navigate(['/']);
   }
-  
+
 logOut2() {
   DataModel.account = null;
   localStorage.clear();

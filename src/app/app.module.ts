@@ -40,8 +40,8 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
     HeaderComponent,
     ServicesInformationComponent,
     PortefolioComponent,
-   
-    
+
+
   ],
   imports: [
 
@@ -62,7 +62,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
           path: 'register',
           component: RegisterComponent
         },
-      
+
         {
           path: '',
           redirectTo: '/home', pathMatch: 'full'
@@ -71,7 +71,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
           path: 'profile',
           component: ProfileComponent
         },
-   
+
         {
           path: 'contact',
           component: ContactComponent

@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
   async registerUser(event) {
-    event.preventDefault()
+    event.preventDefault();
     const target = event.target;
 
     const username = target.querySelector('#username').value;
