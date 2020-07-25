@@ -3,12 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\contact",
     "\\src\\app\\home",
     "\\src\\app\\services-information",
     "\\src\\assets",
     "\\src\\assets\\img",
     "\\src\\assets\\img\\portfolio"
   ],
-  "SelectedNode": "\\src\\app\\home\\home.component.css",
+  "SelectedNode": "\\src\\app\\contact\\contact.component.html",
   "PreviewInSolutionExplorer": false
 }
