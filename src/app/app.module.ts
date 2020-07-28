@@ -7,8 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { RegisterComponent } from './register/register.component';
-import { RegFormComponent } from './reg-form/reg-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
@@ -35,8 +33,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
     ProfileComponent,
     LoginFormComponent,
     LoginComponent,
-    RegisterComponent,
-    RegFormComponent,
+
     HeaderComponent,
     ServicesInformationComponent,
     PortefolioComponent,
@@ -56,11 +53,6 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
         {
           path: 'portfolio',
           component: PortefolioComponent
-        },
-
-        {
-          path: 'register',
-          component: RegisterComponent
         },
 
         {

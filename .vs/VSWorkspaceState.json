@@ -3,14 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\header",
-    "\\src\\app\\portefolio",
-    "\\src\\app\\services",
-    "\\src\\app\\services-information",
     "\\src\\assets",
     "\\src\\assets\\img",
     "\\src\\assets\\img\\portfolio"
   ],
-  "SelectedNode": "\\src\\app\\services-information\\services-information.component.html",
+  "SelectedNode": "\\src\\assets\\CV.pdf",
   "PreviewInSolutionExplorer": false
 }
