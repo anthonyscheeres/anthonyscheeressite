@@ -14,17 +14,11 @@
       <a routerLink="/portfolio">Portfolio</a>
 
       <div class="d-none d-md-block">
-        <a *ngIf="isLoggedIn" routerLink="/profile">Profiel</a>
-        <a *ngIf="isLoggedIn==false" class="glyphicon glyphicon-log-in" routerLink="/login"> Login</a>
+
         <a href="../assets/CV.pdf" target="_blank">CV</a>
       </div>
 
 
-      <a style="float:right" routerLink="/contact">Contact</a>
-      <div class="d-none d-md-block">
-        <a *ngIf="isLoggedIn" (click)="logOut()"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
-
-      </div>
     </nav>
 
   </nav>
