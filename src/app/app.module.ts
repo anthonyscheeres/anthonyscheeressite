@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
@@ -23,7 +22,7 @@ import { PortefolioComponent } from './portefolio/portefolio.component';
   
 
     HomeComponent,
-    FooterComponent,
+   
   
 
     HeaderComponent,
