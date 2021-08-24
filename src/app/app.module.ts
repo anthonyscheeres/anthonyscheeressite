@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { ServicesInformationComponent } from './services-information/services-information.component';
 import { PortefolioComponent } from './portefolio/portefolio.component';
